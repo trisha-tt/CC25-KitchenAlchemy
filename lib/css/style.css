@@ -217,6 +217,7 @@ canvas {
     background: #f9f9f9;
 }
 
+<<<<<<< HEAD
 /* New CSS */
 
 .vScroll {
@@ -227,6 +228,10 @@ canvas {
     top: 0;
     right: 0;
     position: absolute;
+=======
+.shop-item {
+    width: 100px;
+>>>>>>> e0559915640466c9fbfdd3388abef1e9193db748
 }
 
 .bar {

@@ -44,35 +44,54 @@
             <div class="shop-wrapper">
                 <div class="box">
                     <img class="shop-item" src="/assets/img/butter.png" onclick="purchaseItem(this, 3, 'butter')" data-id="3">
-                    <p class="shop-label">Butter: 3 Coins</p>
+                    <p class="shop-label">Butter: 3 
+                        <button class="coin-shop-icon"><img src = "assets/img/coin.png" width="25"></button>
+                    </p>
                 </div>
                 <div class="box">
                     <img class="shop-item" src="/assets/img/cheese.png" onclick="purchaseItem(this, 4, 'cheese')" data-id="4">
-                    <p class="shop-label">Cheese: 4 Coins</p>
+                    <p class="shop-label">Cheese: 4 
+                        <button class="coin-shop-icon"><img src = "assets/img/coin.png" width="25"></button>
+                    </p>
                 </div>
                 <div class="box">
                     <img class="shop-item" src="/assets/img/egg.png" onclick="purchaseItem(this, 5, 'egg')" data-id="5">
-                    <p class="shop-label">Egg: 5 Coins</p>
+                    <p class="shop-label">Egg: 5 
+                        <button class="coin-shop-icon"><img src = "assets/img/coin.png" width="25"></button>
+                    </p>
                 </div>
                 <div class="box">
                     <img class="shop-item" src="/assets/img/milk.png" onclick="purchaseItem(this, 6, 'milk')" data-id="6">
-                    <p class="shop-label">Milk: 6 Coins</p>
+                    <p class="shop-label">Milk: 6 
+                        <button class="coin-shop-icon"><img src = "assets/img/coin.png" width="25"></button>
+                    </p>
                 </div>
                 <div class="box">
                     <img class="shop-item" src="/assets/img/tomato.png" onclick="purchaseItem(this, 7, 'tomato')" data-id="7">
-                    <p class="shop-label">Tomato: 7 Coins</p>
+                    <p class="shop-label">Tomato: 7 
+                        <button class="coin-shop-icon"><img src = "assets/img/coin.png" width="25"></button>
+                    </p>
                 </div>
                 <div class="box">
                     <img class="shop-item" src="/assets/img/cake.png" onclick="purchaseItem(this, 100, 'cake')" data-id="100">
-                    <p class="shop-label">Cake: 100 Coins</p>
+                    <p class="shop-label">Cake: 100 
+                        <button class="coin-shop-icon"><img src = "assets/img/coin.png" width="25"></button>
+                    </p>
                 </div>
             </div>
             <a href="#" class="close-popup-button">Exit</a>
         </div>
     </div>
 
-    <div id="coinDisplay">
+    <!-- <div id="coinDisplay">
         Coins: 10
+    </div> -->
+    
+    <div id="coinContainer">
+        <div id="coinDisplay">Coins: 10</div>
+        <button class="coin-icon">
+            <img src="coin.png" alt="coin" width="20">
+        </button>
     </div>
 
     <audio id="purchaseSound" src="./assets/sound/purchase.mp3" preload="auto"></audio>

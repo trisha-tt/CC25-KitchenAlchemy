@@ -58,32 +58,32 @@
              <div class="shop-wrapper">
  
                  <div class="box a">
-                     <img id="shop-item" src="/assets/img/butter.png" onclick="isPurchased(this)" id="3">
+                     <img class="shop-item" src="/assets/img/butter.png" onclick="isPurchased(this)" id="3">
                      <p class="shop-label">Butter: 3 Coin</p>
                  </div>
  
                  <div class="box b">
-                     <img id="shop-item" src="/assets/img/cheese.png" onclick="isPurchased(this)" id="4">
+                     <img class="shop-item" src="/assets/img/cheese.png" onclick="isPurchased(this)" id="4">
                      <p class="shop-label">Cheese: 4 Coins</p>
                  </div>
  
                  <div class="box c">
-                     <img id="shop-item" src="/assets/img/egg.png" onclick="isPurchased(this)" id="5">
+                     <img class="shop-item" src="/assets/img/egg.png" onclick="isPurchased(this)" id="5">
                      <p class="shop-label">Egg: 5 Coins</p>
                  </div>
  
                  <div class="box d">
-                     <img id="shop-item" src="/assets/img/milk.png" onclick="isPurchased(this)" id="6">
+                     <img class="shop-item" src="/assets/img/milk.png" onclick="isPurchased(this)" id="6">
                      <p class="shop-label">Milk: 6 Coins</p>
                  </div>
  
                  <div class="box e">
-                     <img id="shop-item" src="/assets/img/tomato.png" onclick="isPurchased(this)" id="7">
+                     <img class="shop-item" src="/assets/img/tomato.png" onclick="isPurchased(this)" id="7">
                      <p class="shop-label">Tomato: 7 Coins</p>
                  </div>
  
                  <div class="box f">
-                     <img id="shop-item" src="/assets/img/cake.png" onclick="isPurchased(this)" id="100">
+                     <img class="shop-item" src="/assets/img/cake.png" onclick="isPurchased(this)" id="100">
                      <p class="shop-label">Cake: 100 Coins</p>
                  </div>
  
@@ -101,17 +101,16 @@
      <!-- js for shop -->
      <script>
          var image =  document.getElementById("shop-item");
- 
-         // TODO: fix the errors that are happening with purchase
-         var parentBox = image.closest('.box');
-         var label = parentBox.querySelector('.shop-label');
-     
+
          function isPurchased(image) {
-             if (image.getAttribute('src') != "/assets/img/purchased.png") {
-                 image.src = "/assets/img/purchased.png";
-                 label.textContent = "Purchased!";
-             }
-         }
+            var parentBox = image.closest('.box');
+            var label = parentBox.querySelector('.shop-label');
+
+            if (image.getAttribute('src') != "/assets/img/purchased.png") {
+                image.src = "/assets/img/purchased.png";
+                label.textContent = "Purchased!";
+            }
+        }
  
      </script>
 

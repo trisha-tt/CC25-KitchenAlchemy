@@ -8,6 +8,18 @@ body {
     color: #333;
 }
 
+/* loading screen code */
+.loadingScreen {
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .main {
     display: flex;
     justify-content: center;
@@ -217,7 +229,6 @@ canvas {
     background: #f9f9f9;
 }
 
-<<<<<<< HEAD
 /* New CSS */
 
 .vScroll {
@@ -228,10 +239,6 @@ canvas {
     top: 0;
     right: 0;
     position: absolute;
-=======
-.shop-item {
-    width: 100px;
->>>>>>> e0559915640466c9fbfdd3388abef1e9193db748
 }
 
 .bar {

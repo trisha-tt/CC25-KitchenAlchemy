@@ -3,11 +3,6 @@
     padding: 0;
 }
 
-@font-face {
-    font-family: font1;
-    src: url(assets/fonts/AutourOne-Regular.tff);
-}
-
 body { 
     background-color: rgb(158, 206, 216);
     padding: 5px;
@@ -21,10 +16,11 @@ body {
 }
 
   .header {
-    font-family: font1;
+    font-family: "Autour One", serif;
     font-size: 40px;
     text-align: center;
-
+    font-weight: 400;
+    font-style: normal;
   }
 
   .wrapper {
@@ -49,6 +45,9 @@ body {
 .ingredients-header {
     background-color: rgb(34, 93, 101);
     text-align: center;
+    font-family: "Autour One", serif;
+    font-weight: 400;
+    font-style: normal;
     color: white;
 }
 
@@ -56,3 +55,7 @@ body {
     width: 150px;
     display: inline-block;
 }
+
+.autour-one-regular {
+  
+  }  

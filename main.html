@@ -42,6 +42,78 @@
         </div>
     </div>
 
+    <!-- popup testing -->
+     <!-- actual popup button  -->
+     <a href="#popup" style="padding: 10px 20px; background-color: #007BFF; 
+     color: #fff; text-decoration: none; border-radius: 5px;">Open Popup</a>
+ 
+     <!-- popup content -->
+     <div id="popup" class="popup">
+         <div class="popup-content">
+ 
+             <p class="shop-title">Shop</p>
+             <br>
+ 
+             <!-- per each item in the shop -->
+             <div class="shop-wrapper">
+ 
+                 <div class="box a">
+                     <img id="shop-item" src="/assets/img/butter.png" onclick="isPurchased(this)" id="3">
+                     <p class="shop-label">Butter: 3 Coin</p>
+                 </div>
+ 
+                 <div class="box b">
+                     <img id="shop-item" src="/assets/img/cheese.png" onclick="isPurchased(this)" id="4">
+                     <p class="shop-label">Cheese: 4 Coins</p>
+                 </div>
+ 
+                 <div class="box c">
+                     <img id="shop-item" src="/assets/img/egg.png" onclick="isPurchased(this)" id="5">
+                     <p class="shop-label">Egg: 5 Coins</p>
+                 </div>
+ 
+                 <div class="box d">
+                     <img id="shop-item" src="/assets/img/milk.png" onclick="isPurchased(this)" id="6">
+                     <p class="shop-label">Milk: 6 Coins</p>
+                 </div>
+ 
+                 <div class="box e">
+                     <img id="shop-item" src="/assets/img/tomato.png" onclick="isPurchased(this)" id="7">
+                     <p class="shop-label">Tomato: 7 Coins</p>
+                 </div>
+ 
+                 <div class="box f">
+                     <img id="shop-item" src="/assets/img/cake.png" onclick="isPurchased(this)" id="100">
+                     <p class="shop-label">Cake: 100 Coins</p>
+                 </div>
+ 
+               </div>
+ 
+             <br><br>
+ 
+             <!-- exit button -->
+             <a href="#" style="display: inline-block; margin-top: 10px; padding:
+                 10px 20px; background-color: #dc3545; color: #fff; text-decoration:
+                 none; border-radius: 3px;">Exit</a>
+         </div>
+     </div>
+     
+     <!-- js for shop -->
+     <script>
+         var image =  document.getElementById("shop-item");
+ 
+         // TODO: fix the errors that are happening with purchase
+         var parentBox = image.closest('.box');
+         var label = parentBox.querySelector('.shop-label');
+     
+         function isPurchased(image) {
+             if (image.getAttribute('src') != "/assets/img/purchased.png") {
+                 image.src = "/assets/img/purchased.png";
+                 label.textContent = "Purchased!";
+             }
+         }
+ 
+     </script>
 
 </body>
 

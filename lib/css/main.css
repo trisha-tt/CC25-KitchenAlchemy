@@ -1,3 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: font1;
+    src: url(assets/fonts/AutourOne-Regular.tff);
+}
+
 body { 
     background-color: lightblue; 
 }
@@ -10,21 +20,30 @@ body {
 }
 
   .header {
-    font-family: sans-serif;
+    font-family: font1;
     font-size: 40px;
     text-align: center;
 
   }
 
   .wrapper {
-    border: 5px solid blue;
-    top:10px;
-    left:10px;
-    width: 1000px;
-    height: 750px;
-    overflow: hidden;
-    background-color:white;
-    margin-top: 72px;
-    border-radius: 7px;
+    display: inline-block;
+    width: 100%;
+    height: 90%;
+
+  }
+
+  .wrapper canvas {
+    border: 3px solid rgb(92, 92, 146);
+     width: 80%;
+    height: 100%;
+    background-color:rgb(158, 206, 216);
+    border-radius: 4px;
     box-shadow: 2px 2px 10px rgb(188, 200, 203);
+    align-items: center;
+}
+
+.sidebar {
+    vertical-align: top;
+    float: right;
 }
